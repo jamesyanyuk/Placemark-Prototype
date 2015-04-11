@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F0E41E9A1AD98FDF000FED51"
+               BlueprintIdentifier = "F0E41F2A1AD9B439000FED51"
                BuildableName = "Placemark.app"
                BlueprintName = "Placemark"
                ReferencedContainer = "container:Placemark.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F0E41EAF1AD98FDF000FED51"
+               BlueprintIdentifier = "F0E41F431AD9B439000FED51"
                BuildableName = "PlacemarkTests.xctest"
                BlueprintName = "PlacemarkTests"
                ReferencedContainer = "container:Placemark.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F0E41EAF1AD98FDF000FED51"
+               BlueprintIdentifier = "F0E41F431AD9B439000FED51"
                BuildableName = "PlacemarkTests.xctest"
                BlueprintName = "PlacemarkTests"
                ReferencedContainer = "container:Placemark.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F0E41E9A1AD98FDF000FED51"
+            BlueprintIdentifier = "F0E41F2A1AD9B439000FED51"
             BuildableName = "Placemark.app"
             BlueprintName = "Placemark"
             ReferencedContainer = "container:Placemark.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F0E41E9A1AD98FDF000FED51"
+            BlueprintIdentifier = "F0E41F2A1AD9B439000FED51"
             BuildableName = "Placemark.app"
             BlueprintName = "Placemark"
             ReferencedContainer = "container:Placemark.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F0E41E9A1AD98FDF000FED51"
+            BlueprintIdentifier = "F0E41F2A1AD9B439000FED51"
             BuildableName = "Placemark.app"
             BlueprintName = "Placemark"
             ReferencedContainer = "container:Placemark.xcodeproj">

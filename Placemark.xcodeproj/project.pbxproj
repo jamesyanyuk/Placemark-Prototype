@@ -7,86 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F0E41EA11AD98FDF000FED51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41EA01AD98FDF000FED51 /* AppDelegate.swift */; };
-		F0E41EA31AD98FDF000FED51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41EA21AD98FDF000FED51 /* ViewController.swift */; };
-		F0E41EA61AD98FDF000FED51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E41EA41AD98FDF000FED51 /* Main.storyboard */; };
-		F0E41EA81AD98FDF000FED51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E41EA71AD98FDF000FED51 /* Images.xcassets */; };
-		F0E41EAB1AD98FDF000FED51 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E41EA91AD98FDF000FED51 /* LaunchScreen.xib */; };
-		F0E41EB71AD98FDF000FED51 /* PlacemarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41EB61AD98FDF000FED51 /* PlacemarkTests.swift */; };
-		F0E41ED01AD995A1000FED51 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41EC41AD995A1000FED51 /* AudioToolbox.framework */; };
-		F0E41ED11AD995A1000FED51 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41EC51AD995A1000FED51 /* AVFoundation.framework */; };
-		F0E41ED21AD995A1000FED51 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41EC61AD995A1000FED51 /* CFNetwork.framework */; };
-		F0E41ED31AD995A1000FED51 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41EC71AD995A1000FED51 /* CoreImage.framework */; };
-		F0E41ED41AD995A1000FED51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41EC81AD995A1000FED51 /* CoreLocation.framework */; };
-		F0E41ED51AD995A1000FED51 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41EC91AD995A1000FED51 /* CoreMedia.framework */; };
-		F0E41ED61AD995A1000FED51 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41ECA1AD995A1000FED51 /* CoreMotion.framework */; };
-		F0E41ED71AD995A1000FED51 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41ECB1AD995A1000FED51 /* CoreVideo.framework */; };
-		F0E41ED81AD995A1000FED51 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41ECC1AD995A1000FED51 /* GLKit.framework */; };
-		F0E41ED91AD995A1000FED51 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41ECD1AD995A1000FED51 /* OpenGLES.framework */; };
-		F0E41EDA1AD995A1000FED51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41ECE1AD995A1000FED51 /* QuartzCore.framework */; };
-		F0E41EDB1AD995A1000FED51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41ECF1AD995A1000FED51 /* Security.framework */; };
-		F0E41EDE1AD99822000FED51 /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41EDD1AD99822000FED51 /* metaioSDK.framework */; };
+		F0E41F311AD9B439000FED51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E41F301AD9B439000FED51 /* main.m */; };
+		F0E41F341AD9B439000FED51 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0E41F331AD9B439000FED51 /* AppDelegate.mm */; };
+		F0E41F371AD9B439000FED51 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0E41F361AD9B439000FED51 /* ViewController.mm */; };
+		F0E41F3A1AD9B439000FED51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E41F381AD9B439000FED51 /* Main.storyboard */; };
+		F0E41F3C1AD9B439000FED51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E41F3B1AD9B439000FED51 /* Images.xcassets */; };
+		F0E41F3F1AD9B439000FED51 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E41F3D1AD9B439000FED51 /* LaunchScreen.xib */; };
+		F0E41F4B1AD9B439000FED51 /* PlacemarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E41F4A1AD9B439000FED51 /* PlacemarkTests.m */; };
+		F0E41F751AD9B59E000FED51 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F561AD9B546000FED51 /* AudioToolbox.framework */; };
+		F0E41F761AD9B59E000FED51 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F571AD9B546000FED51 /* AVFoundation.framework */; };
+		F0E41F771AD9B59E000FED51 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F581AD9B547000FED51 /* CFNetwork.framework */; };
+		F0E41F781AD9B59E000FED51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F591AD9B547000FED51 /* CoreGraphics.framework */; };
+		F0E41F791AD9B59E000FED51 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F5A1AD9B547000FED51 /* CoreImage.framework */; };
+		F0E41F7A1AD9B59E000FED51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F5B1AD9B547000FED51 /* CoreLocation.framework */; };
+		F0E41F7B1AD9B59E000FED51 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F5C1AD9B547000FED51 /* CoreMedia.framework */; };
+		F0E41F7C1AD9B59E000FED51 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F5D1AD9B547000FED51 /* CoreMotion.framework */; };
+		F0E41F7D1AD9B59E000FED51 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F5E1AD9B547000FED51 /* CoreVideo.framework */; };
+		F0E41F7E1AD9B59E000FED51 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F5F1AD9B547000FED51 /* GLKit.framework */; };
+		F0E41F7F1AD9B59E000FED51 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F601AD9B547000FED51 /* libxml2.dylib */; };
+		F0E41F801AD9B59E000FED51 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F611AD9B547000FED51 /* libz.dylib */; };
+		F0E41F811AD9B59E000FED51 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F621AD9B547000FED51 /* OpenGLES.framework */; };
+		F0E41F821AD9B59E000FED51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F631AD9B547000FED51 /* QuartzCore.framework */; };
+		F0E41F831AD9B59E000FED51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F641AD9B547000FED51 /* Security.framework */; };
+		F0E41F841AD9B59E000FED51 /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F541AD9B4E4000FED51 /* metaioSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F0E41EB11AD98FDF000FED51 /* PBXContainerItemProxy */ = {
+		F0E41F451AD9B439000FED51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F0E41E931AD98FDF000FED51 /* Project object */;
+			containerPortal = F0E41F231AD9B439000FED51 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F0E41E9A1AD98FDF000FED51;
+			remoteGlobalIDString = F0E41F2A1AD9B439000FED51;
 			remoteInfo = Placemark;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F0E41E9B1AD98FDF000FED51 /* Placemark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Placemark.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0E41E9F1AD98FDF000FED51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0E41EA01AD98FDF000FED51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0E41EA21AD98FDF000FED51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F0E41EA51AD98FDF000FED51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F0E41EA71AD98FDF000FED51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F0E41EAA1AD98FDF000FED51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F0E41EB01AD98FDF000FED51 /* PlacemarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlacemarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0E41EB51AD98FDF000FED51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0E41EB61AD98FDF000FED51 /* PlacemarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkTests.swift; sourceTree = "<group>"; };
-		F0E41EC41AD995A1000FED51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F0E41EC51AD995A1000FED51 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F0E41EC61AD995A1000FED51 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		F0E41EC71AD995A1000FED51 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		F0E41EC81AD995A1000FED51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F0E41EC91AD995A1000FED51 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		F0E41ECA1AD995A1000FED51 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		F0E41ECB1AD995A1000FED51 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		F0E41ECC1AD995A1000FED51 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		F0E41ECD1AD995A1000FED51 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		F0E41ECE1AD995A1000FED51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		F0E41ECF1AD995A1000FED51 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		F0E41EDC1AD99689000FED51 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		F0E41EDD1AD99822000FED51 /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = metaioSDK.framework; path = ../../../sdk/metaioSDK.framework; sourceTree = "<group>"; };
+		F0E41F2B1AD9B439000FED51 /* Placemark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Placemark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E41F2F1AD9B439000FED51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E41F301AD9B439000FED51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0E41F321AD9B439000FED51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0E41F331AD9B439000FED51 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		F0E41F351AD9B439000FED51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F0E41F361AD9B439000FED51 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F0E41F391AD9B439000FED51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0E41F3B1AD9B439000FED51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0E41F3E1AD9B439000FED51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F0E41F441AD9B439000FED51 /* PlacemarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlacemarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E41F491AD9B439000FED51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E41F4A1AD9B439000FED51 /* PlacemarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacemarkTests.m; sourceTree = "<group>"; };
+		F0E41F541AD9B4E4000FED51 /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = metaioSDK.framework; path = ../../../sdk/metaioSDK.framework; sourceTree = "<group>"; };
+		F0E41F561AD9B546000FED51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F0E41F571AD9B546000FED51 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F0E41F581AD9B547000FED51 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F0E41F591AD9B547000FED51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F0E41F5A1AD9B547000FED51 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F0E41F5B1AD9B547000FED51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F0E41F5C1AD9B547000FED51 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F0E41F5D1AD9B547000FED51 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F0E41F5E1AD9B547000FED51 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F0E41F5F1AD9B547000FED51 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		F0E41F601AD9B547000FED51 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		F0E41F611AD9B547000FED51 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F0E41F621AD9B547000FED51 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F0E41F631AD9B547000FED51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F0E41F641AD9B547000FED51 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F0E41E981AD98FDF000FED51 /* Frameworks */ = {
+		F0E41F281AD9B439000FED51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0E41EDE1AD99822000FED51 /* metaioSDK.framework in Frameworks */,
-				F0E41ED01AD995A1000FED51 /* AudioToolbox.framework in Frameworks */,
-				F0E41ED11AD995A1000FED51 /* AVFoundation.framework in Frameworks */,
-				F0E41ED21AD995A1000FED51 /* CFNetwork.framework in Frameworks */,
-				F0E41ED31AD995A1000FED51 /* CoreImage.framework in Frameworks */,
-				F0E41ED41AD995A1000FED51 /* CoreLocation.framework in Frameworks */,
-				F0E41ED51AD995A1000FED51 /* CoreMedia.framework in Frameworks */,
-				F0E41ED61AD995A1000FED51 /* CoreMotion.framework in Frameworks */,
-				F0E41ED71AD995A1000FED51 /* CoreVideo.framework in Frameworks */,
-				F0E41ED81AD995A1000FED51 /* GLKit.framework in Frameworks */,
-				F0E41ED91AD995A1000FED51 /* OpenGLES.framework in Frameworks */,
-				F0E41EDA1AD995A1000FED51 /* QuartzCore.framework in Frameworks */,
-				F0E41EDB1AD995A1000FED51 /* Security.framework in Frameworks */,
+				F0E41F751AD9B59E000FED51 /* AudioToolbox.framework in Frameworks */,
+				F0E41F761AD9B59E000FED51 /* AVFoundation.framework in Frameworks */,
+				F0E41F771AD9B59E000FED51 /* CFNetwork.framework in Frameworks */,
+				F0E41F781AD9B59E000FED51 /* CoreGraphics.framework in Frameworks */,
+				F0E41F791AD9B59E000FED51 /* CoreImage.framework in Frameworks */,
+				F0E41F7A1AD9B59E000FED51 /* CoreLocation.framework in Frameworks */,
+				F0E41F7B1AD9B59E000FED51 /* CoreMedia.framework in Frameworks */,
+				F0E41F7C1AD9B59E000FED51 /* CoreMotion.framework in Frameworks */,
+				F0E41F7D1AD9B59E000FED51 /* CoreVideo.framework in Frameworks */,
+				F0E41F7E1AD9B59E000FED51 /* GLKit.framework in Frameworks */,
+				F0E41F7F1AD9B59E000FED51 /* libxml2.dylib in Frameworks */,
+				F0E41F801AD9B59E000FED51 /* libz.dylib in Frameworks */,
+				F0E41F811AD9B59E000FED51 /* OpenGLES.framework in Frameworks */,
+				F0E41F821AD9B59E000FED51 /* QuartzCore.framework in Frameworks */,
+				F0E41F831AD9B59E000FED51 /* Security.framework in Frameworks */,
+				F0E41F841AD9B59E000FED51 /* metaioSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0E41EAD1AD98FDF000FED51 /* Frameworks */ = {
+		F0E41F411AD9B439000FED51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,80 +108,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F0E41E921AD98FDF000FED51 = {
+		F0E41F221AD9B439000FED51 = {
 			isa = PBXGroup;
 			children = (
-				F0E41EDC1AD99689000FED51 /* Bridging-Header.h */,
-				F0E41EC01AD990E1000FED51 /* Frameworks */,
-				F0E41E9D1AD98FDF000FED51 /* Placemark */,
-				F0E41EB31AD98FDF000FED51 /* PlacemarkTests */,
-				F0E41E9C1AD98FDF000FED51 /* Products */,
+				F0E41F741AD9B56C000FED51 /* Frameworks */,
+				F0E41F2D1AD9B439000FED51 /* Placemark */,
+				F0E41F471AD9B439000FED51 /* PlacemarkTests */,
+				F0E41F2C1AD9B439000FED51 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F0E41E9C1AD98FDF000FED51 /* Products */ = {
+		F0E41F2C1AD9B439000FED51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0E41E9B1AD98FDF000FED51 /* Placemark.app */,
-				F0E41EB01AD98FDF000FED51 /* PlacemarkTests.xctest */,
+				F0E41F2B1AD9B439000FED51 /* Placemark.app */,
+				F0E41F441AD9B439000FED51 /* PlacemarkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F0E41E9D1AD98FDF000FED51 /* Placemark */ = {
+		F0E41F2D1AD9B439000FED51 /* Placemark */ = {
 			isa = PBXGroup;
 			children = (
-				F0E41EA01AD98FDF000FED51 /* AppDelegate.swift */,
-				F0E41EA21AD98FDF000FED51 /* ViewController.swift */,
-				F0E41EA41AD98FDF000FED51 /* Main.storyboard */,
-				F0E41EA71AD98FDF000FED51 /* Images.xcassets */,
-				F0E41EA91AD98FDF000FED51 /* LaunchScreen.xib */,
-				F0E41E9E1AD98FDF000FED51 /* Supporting Files */,
+				F0E41F321AD9B439000FED51 /* AppDelegate.h */,
+				F0E41F331AD9B439000FED51 /* AppDelegate.mm */,
+				F0E41F351AD9B439000FED51 /* ViewController.h */,
+				F0E41F361AD9B439000FED51 /* ViewController.mm */,
+				F0E41F381AD9B439000FED51 /* Main.storyboard */,
+				F0E41F3B1AD9B439000FED51 /* Images.xcassets */,
+				F0E41F3D1AD9B439000FED51 /* LaunchScreen.xib */,
+				F0E41F2E1AD9B439000FED51 /* Supporting Files */,
 			);
 			path = Placemark;
 			sourceTree = "<group>";
 		};
-		F0E41E9E1AD98FDF000FED51 /* Supporting Files */ = {
+		F0E41F2E1AD9B439000FED51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F0E41E9F1AD98FDF000FED51 /* Info.plist */,
+				F0E41F2F1AD9B439000FED51 /* Info.plist */,
+				F0E41F301AD9B439000FED51 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F0E41EB31AD98FDF000FED51 /* PlacemarkTests */ = {
+		F0E41F471AD9B439000FED51 /* PlacemarkTests */ = {
 			isa = PBXGroup;
 			children = (
-				F0E41EB61AD98FDF000FED51 /* PlacemarkTests.swift */,
-				F0E41EB41AD98FDF000FED51 /* Supporting Files */,
+				F0E41F4A1AD9B439000FED51 /* PlacemarkTests.m */,
+				F0E41F481AD9B439000FED51 /* Supporting Files */,
 			);
 			path = PlacemarkTests;
 			sourceTree = "<group>";
 		};
-		F0E41EB41AD98FDF000FED51 /* Supporting Files */ = {
+		F0E41F481AD9B439000FED51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F0E41EB51AD98FDF000FED51 /* Info.plist */,
+				F0E41F491AD9B439000FED51 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F0E41EC01AD990E1000FED51 /* Frameworks */ = {
+		F0E41F741AD9B56C000FED51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0E41EDD1AD99822000FED51 /* metaioSDK.framework */,
-				F0E41EC41AD995A1000FED51 /* AudioToolbox.framework */,
-				F0E41EC51AD995A1000FED51 /* AVFoundation.framework */,
-				F0E41EC61AD995A1000FED51 /* CFNetwork.framework */,
-				F0E41EC71AD995A1000FED51 /* CoreImage.framework */,
-				F0E41EC81AD995A1000FED51 /* CoreLocation.framework */,
-				F0E41EC91AD995A1000FED51 /* CoreMedia.framework */,
-				F0E41ECA1AD995A1000FED51 /* CoreMotion.framework */,
-				F0E41ECB1AD995A1000FED51 /* CoreVideo.framework */,
-				F0E41ECC1AD995A1000FED51 /* GLKit.framework */,
-				F0E41ECD1AD995A1000FED51 /* OpenGLES.framework */,
-				F0E41ECE1AD995A1000FED51 /* QuartzCore.framework */,
-				F0E41ECF1AD995A1000FED51 /* Security.framework */,
+				F0E41F561AD9B546000FED51 /* AudioToolbox.framework */,
+				F0E41F571AD9B546000FED51 /* AVFoundation.framework */,
+				F0E41F581AD9B547000FED51 /* CFNetwork.framework */,
+				F0E41F591AD9B547000FED51 /* CoreGraphics.framework */,
+				F0E41F5A1AD9B547000FED51 /* CoreImage.framework */,
+				F0E41F5B1AD9B547000FED51 /* CoreLocation.framework */,
+				F0E41F5C1AD9B547000FED51 /* CoreMedia.framework */,
+				F0E41F5D1AD9B547000FED51 /* CoreMotion.framework */,
+				F0E41F5E1AD9B547000FED51 /* CoreVideo.framework */,
+				F0E41F5F1AD9B547000FED51 /* GLKit.framework */,
+				F0E41F601AD9B547000FED51 /* libxml2.dylib */,
+				F0E41F611AD9B547000FED51 /* libz.dylib */,
+				F0E41F621AD9B547000FED51 /* OpenGLES.framework */,
+				F0E41F631AD9B547000FED51 /* QuartzCore.framework */,
+				F0E41F641AD9B547000FED51 /* Security.framework */,
+				F0E41F541AD9B4E4000FED51 /* metaioSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,13 +194,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0E41E9A1AD98FDF000FED51 /* Placemark */ = {
+		F0E41F2A1AD9B439000FED51 /* Placemark */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0E41EBA1AD98FDF000FED51 /* Build configuration list for PBXNativeTarget "Placemark" */;
+			buildConfigurationList = F0E41F4E1AD9B439000FED51 /* Build configuration list for PBXNativeTarget "Placemark" */;
 			buildPhases = (
-				F0E41E971AD98FDF000FED51 /* Sources */,
-				F0E41E981AD98FDF000FED51 /* Frameworks */,
-				F0E41E991AD98FDF000FED51 /* Resources */,
+				F0E41F271AD9B439000FED51 /* Sources */,
+				F0E41F281AD9B439000FED51 /* Frameworks */,
+				F0E41F291AD9B439000FED51 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -191,46 +208,46 @@
 			);
 			name = Placemark;
 			productName = Placemark;
-			productReference = F0E41E9B1AD98FDF000FED51 /* Placemark.app */;
+			productReference = F0E41F2B1AD9B439000FED51 /* Placemark.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F0E41EAF1AD98FDF000FED51 /* PlacemarkTests */ = {
+		F0E41F431AD9B439000FED51 /* PlacemarkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0E41EBD1AD98FE0000FED51 /* Build configuration list for PBXNativeTarget "PlacemarkTests" */;
+			buildConfigurationList = F0E41F511AD9B439000FED51 /* Build configuration list for PBXNativeTarget "PlacemarkTests" */;
 			buildPhases = (
-				F0E41EAC1AD98FDF000FED51 /* Sources */,
-				F0E41EAD1AD98FDF000FED51 /* Frameworks */,
-				F0E41EAE1AD98FDF000FED51 /* Resources */,
+				F0E41F401AD9B439000FED51 /* Sources */,
+				F0E41F411AD9B439000FED51 /* Frameworks */,
+				F0E41F421AD9B439000FED51 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F0E41EB21AD98FDF000FED51 /* PBXTargetDependency */,
+				F0E41F461AD9B439000FED51 /* PBXTargetDependency */,
 			);
 			name = PlacemarkTests;
 			productName = PlacemarkTests;
-			productReference = F0E41EB01AD98FDF000FED51 /* PlacemarkTests.xctest */;
+			productReference = F0E41F441AD9B439000FED51 /* PlacemarkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F0E41E931AD98FDF000FED51 /* Project object */ = {
+		F0E41F231AD9B439000FED51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = placemark;
 				TargetAttributes = {
-					F0E41E9A1AD98FDF000FED51 = {
+					F0E41F2A1AD9B439000FED51 = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					F0E41EAF1AD98FDF000FED51 = {
+					F0E41F431AD9B439000FED51 = {
 						CreatedOnToolsVersion = 6.3;
-						TestTargetID = F0E41E9A1AD98FDF000FED51;
+						TestTargetID = F0E41F2A1AD9B439000FED51;
 					};
 				};
 			};
-			buildConfigurationList = F0E41E961AD98FDF000FED51 /* Build configuration list for PBXProject "Placemark" */;
+			buildConfigurationList = F0E41F261AD9B439000FED51 /* Build configuration list for PBXProject "Placemark" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,29 +255,29 @@
 				en,
 				Base,
 			);
-			mainGroup = F0E41E921AD98FDF000FED51;
-			productRefGroup = F0E41E9C1AD98FDF000FED51 /* Products */;
+			mainGroup = F0E41F221AD9B439000FED51;
+			productRefGroup = F0E41F2C1AD9B439000FED51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0E41E9A1AD98FDF000FED51 /* Placemark */,
-				F0E41EAF1AD98FDF000FED51 /* PlacemarkTests */,
+				F0E41F2A1AD9B439000FED51 /* Placemark */,
+				F0E41F431AD9B439000FED51 /* PlacemarkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F0E41E991AD98FDF000FED51 /* Resources */ = {
+		F0E41F291AD9B439000FED51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0E41EA61AD98FDF000FED51 /* Main.storyboard in Resources */,
-				F0E41EAB1AD98FDF000FED51 /* LaunchScreen.xib in Resources */,
-				F0E41EA81AD98FDF000FED51 /* Images.xcassets in Resources */,
+				F0E41F3A1AD9B439000FED51 /* Main.storyboard in Resources */,
+				F0E41F3F1AD9B439000FED51 /* LaunchScreen.xib in Resources */,
+				F0E41F3C1AD9B439000FED51 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0E41EAE1AD98FDF000FED51 /* Resources */ = {
+		F0E41F421AD9B439000FED51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,46 +287,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F0E41E971AD98FDF000FED51 /* Sources */ = {
+		F0E41F271AD9B439000FED51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0E41EA31AD98FDF000FED51 /* ViewController.swift in Sources */,
-				F0E41EA11AD98FDF000FED51 /* AppDelegate.swift in Sources */,
+				F0E41F371AD9B439000FED51 /* ViewController.mm in Sources */,
+				F0E41F341AD9B439000FED51 /* AppDelegate.mm in Sources */,
+				F0E41F311AD9B439000FED51 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0E41EAC1AD98FDF000FED51 /* Sources */ = {
+		F0E41F401AD9B439000FED51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0E41EB71AD98FDF000FED51 /* PlacemarkTests.swift in Sources */,
+				F0E41F4B1AD9B439000FED51 /* PlacemarkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F0E41EB21AD98FDF000FED51 /* PBXTargetDependency */ = {
+		F0E41F461AD9B439000FED51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F0E41E9A1AD98FDF000FED51 /* Placemark */;
-			targetProxy = F0E41EB11AD98FDF000FED51 /* PBXContainerItemProxy */;
+			target = F0E41F2A1AD9B439000FED51 /* Placemark */;
+			targetProxy = F0E41F451AD9B439000FED51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F0E41EA41AD98FDF000FED51 /* Main.storyboard */ = {
+		F0E41F381AD9B439000FED51 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F0E41EA51AD98FDF000FED51 /* Base */,
+				F0E41F391AD9B439000FED51 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F0E41EA91AD98FDF000FED51 /* LaunchScreen.xib */ = {
+		F0E41F3D1AD9B439000FED51 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F0E41EAA1AD98FDF000FED51 /* Base */,
+				F0E41F3E1AD9B439000FED51 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -317,7 +335,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F0E41EB81AD98FDF000FED51 /* Debug */ = {
+		F0E41F4C1AD9B439000FED51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,11 +375,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		F0E41EB91AD98FDF000FED51 /* Release */ = {
+		F0E41F4D1AD9B439000FED51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -398,39 +415,37 @@
 			};
 			name = Release;
 		};
-		F0E41EBB1AD98FDF000FED51 /* Debug */ = {
+		F0E41F4F1AD9B439000FED51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
 					/Users/jamesyanyuk/sdk,
 				);
 				INFOPLIST_FILE = Placemark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
-		F0E41EBC1AD98FDF000FED51 /* Release */ = {
+		F0E41F501AD9B439000FED51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
 					/Users/jamesyanyuk/sdk,
 				);
 				INFOPLIST_FILE = Placemark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
-		F0E41EBE1AD98FE0000FED51 /* Debug */ = {
+		F0E41F521AD9B439000FED51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -449,7 +464,7 @@
 			};
 			name = Debug;
 		};
-		F0E41EBF1AD98FE0000FED51 /* Release */ = {
+		F0E41F531AD9B439000FED51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,34 +482,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F0E41E961AD98FDF000FED51 /* Build configuration list for PBXProject "Placemark" */ = {
+		F0E41F261AD9B439000FED51 /* Build configuration list for PBXProject "Placemark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0E41EB81AD98FDF000FED51 /* Debug */,
-				F0E41EB91AD98FDF000FED51 /* Release */,
+				F0E41F4C1AD9B439000FED51 /* Debug */,
+				F0E41F4D1AD9B439000FED51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0E41EBA1AD98FDF000FED51 /* Build configuration list for PBXNativeTarget "Placemark" */ = {
+		F0E41F4E1AD9B439000FED51 /* Build configuration list for PBXNativeTarget "Placemark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0E41EBB1AD98FDF000FED51 /* Debug */,
-				F0E41EBC1AD98FDF000FED51 /* Release */,
+				F0E41F4F1AD9B439000FED51 /* Debug */,
+				F0E41F501AD9B439000FED51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0E41EBD1AD98FE0000FED51 /* Build configuration list for PBXNativeTarget "PlacemarkTests" */ = {
+		F0E41F511AD9B439000FED51 /* Build configuration list for PBXNativeTarget "PlacemarkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0E41EBE1AD98FE0000FED51 /* Debug */,
-				F0E41EBF1AD98FE0000FED51 /* Release */,
+				F0E41F521AD9B439000FED51 /* Debug */,
+				F0E41F531AD9B439000FED51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F0E41E931AD98FDF000FED51 /* Project object */;
+	rootObject = F0E41F231AD9B439000FED51 /* Project object */;
 }

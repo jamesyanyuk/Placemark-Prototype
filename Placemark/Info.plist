@@ -30,6 +30,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>MetaioLicenseString</key>
+	<string>eyGNBjt1Udy5rVRPXTXs8csyLx7femtiaA+iENzgMT8=</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
