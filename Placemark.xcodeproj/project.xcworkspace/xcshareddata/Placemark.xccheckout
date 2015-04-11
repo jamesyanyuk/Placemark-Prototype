@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FD9EFF01-4722-41F5-AAA1-CC69AE4268E4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Placemark</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>54BDCCAF95BBD09B5505028C9656182D4B408C3C</key>
+		<string>https://github.com/jyanyuk/Placemark.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Placemark.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>54BDCCAF95BBD09B5505028C9656182D4B408C3C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jyanyuk/Placemark.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>54BDCCAF95BBD09B5505028C9656182D4B408C3C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>54BDCCAF95BBD09B5505028C9656182D4B408C3C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Placemark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
