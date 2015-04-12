@@ -15,15 +15,48 @@
                     <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" drawableDepthFormat="24" enableSetNeedsDisplay="NO" id="sQ7-aI-C75">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" placeholder="Enter a Location" translatesAutoresizingMaskIntoConstraints="NO" id="gjY-IY-oiS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.46666666666666667" green="0.84705882352941175" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ghq-zX-SSk">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="N8I-ik-SJ6"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="aoG-kX-3qR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ghq-zX-SSk" secondAttribute="trailing" id="4Ge-CJ-LXb"/>
+                            <constraint firstAttribute="trailing" secondItem="gjY-IY-oiS" secondAttribute="trailing" id="6Me-Bf-9Te"/>
+                            <constraint firstItem="gjY-IY-oiS" firstAttribute="leading" secondItem="sQ7-aI-C75" secondAttribute="leading" id="A6a-10-AU4"/>
+                            <constraint firstItem="Ju3-XB-W2b" firstAttribute="top" secondItem="ghq-zX-SSk" secondAttribute="bottom" id="c7t-sT-jKP"/>
+                            <constraint firstItem="ghq-zX-SSk" firstAttribute="leading" secondItem="sQ7-aI-C75" secondAttribute="leading" id="caN-d7-yRl"/>
+                            <constraint firstItem="ghq-zX-SSk" firstAttribute="top" secondItem="gjY-IY-oiS" secondAttribute="bottom" id="kdX-mU-x4K"/>
+                        </constraints>
                         <connections>
                             <outlet property="delegate" destination="vXZ-lx-hvc" id="U5D-ha-j6l"/>
                         </connections>
                     </glkView>
                     <connections>
                         <outlet property="glkView" destination="sQ7-aI-C75" id="kyT-70-VgH"/>
+                        <outlet property="searchBar" destination="gjY-IY-oiS" id="XT8-4A-nI6"/>
+                        <outlet property="tableView" destination="ghq-zX-SSk" id="mHE-Do-hnQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Wwv-4a-dyy">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="rf7-4I-ubu"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="7Gv-1c-Nb7"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="w3C-ok-sZ4"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="fgO-aU-bAd"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
         </scene>
     </scenes>
