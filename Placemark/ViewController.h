@@ -11,11 +11,14 @@
 
 @interface ViewController : MetaioSDKViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) NSArray *locationResults;
+@property (strong, nonatomic) NSMutableArray *locationResults;
 @property (strong, nonatomic) UITextField *searchTextField;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet GLKView *glView;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+
+-(void)hideSearchResults:(BOOL)hiddenState;
 
 @end
 

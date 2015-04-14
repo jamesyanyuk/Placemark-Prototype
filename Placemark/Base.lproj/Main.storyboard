@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" placeholder="Enter a Location" translatesAutoresizingMaskIntoConstraints="NO" id="gjY-IY-oiS">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" placeholder="Enter a Location" translatesAutoresizingMaskIntoConstraints="NO" id="gjY-IY-oiS" customClass="SearchBarDelegate">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <color key="barTintColor" red="0.46666666666666667" green="0.84705882352941175" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
@@ -43,6 +43,7 @@
                         </connections>
                     </glkView>
                     <connections>
+                        <outlet property="glView" destination="sQ7-aI-C75" id="gaK-lF-VTK"/>
                         <outlet property="glkView" destination="sQ7-aI-C75" id="kyT-70-VgH"/>
                         <outlet property="searchBar" destination="gjY-IY-oiS" id="XT8-4A-nI6"/>
                         <outlet property="tableView" destination="ghq-zX-SSk" id="mHE-Do-hnQ"/>
