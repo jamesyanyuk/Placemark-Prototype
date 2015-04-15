@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 placemark. All rights reserved.
 //
 
+//Added
+@class ViewController;
+
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
