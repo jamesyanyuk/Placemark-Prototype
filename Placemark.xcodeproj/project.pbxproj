@@ -32,7 +32,13 @@
 		F0E41F811AD9B59E000FED51 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F621AD9B547000FED51 /* OpenGLES.framework */; };
 		F0E41F821AD9B59E000FED51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F631AD9B547000FED51 /* QuartzCore.framework */; };
 		F0E41F831AD9B59E000FED51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F641AD9B547000FED51 /* Security.framework */; };
+<<<<<<< HEAD
 		F0E41F8F1AD9F16D000FED51 /* Marker.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0E41F8E1AD9F16D000FED51 /* Marker.mm */; };
+=======
+		F0E41F841AD9B59E000FED51 /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E41F541AD9B4E4000FED51 /* metaioSDK.framework */; };
+		F0E41F8F1AD9F16D000FED51 /* Marker.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E41F8E1AD9F16D000FED51 /* Marker.m */; };
+		F0E41F921ADA14DF000FED51 /* SearchBarDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0E41F911ADA14DF000FED51 /* SearchBarDelegate.mm */; };
+>>>>>>> 925819c7a23dd7e3088bd544db3b85ce62001ed5
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +85,13 @@
 		F0E41F631AD9B547000FED51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F0E41F641AD9B547000FED51 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F0E41F8D1AD9F16D000FED51 /* Marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marker.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		F0E41F8E1AD9F16D000FED51 /* Marker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Marker.mm; sourceTree = "<group>"; };
+=======
+		F0E41F8E1AD9F16D000FED51 /* Marker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Marker.m; sourceTree = "<group>"; };
+		F0E41F901ADA14DF000FED51 /* SearchBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarDelegate.h; sourceTree = "<group>"; };
+		F0E41F911ADA14DF000FED51 /* SearchBarDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SearchBarDelegate.mm; sourceTree = "<group>"; };
+>>>>>>> 925819c7a23dd7e3088bd544db3b85ce62001ed5
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +160,15 @@
 				F0E41F3D1AD9B439000FED51 /* LaunchScreen.xib */,
 				F0E41F2E1AD9B439000FED51 /* Supporting Files */,
 				F0E41F8D1AD9F16D000FED51 /* Marker.h */,
+<<<<<<< HEAD
 				F0E41F8E1AD9F16D000FED51 /* Marker.mm */,
 				C14ED8A81ADA124C00FDBE16 /* TripLocation.h */,
 				C14ED8A91ADA124C00FDBE16 /* TripLocation.mm */,
+=======
+				F0E41F8E1AD9F16D000FED51 /* Marker.m */,
+				F0E41F901ADA14DF000FED51 /* SearchBarDelegate.h */,
+				F0E41F911ADA14DF000FED51 /* SearchBarDelegate.mm */,
+>>>>>>> 925819c7a23dd7e3088bd544db3b85ce62001ed5
 			);
 			path = Placemark;
 			sourceTree = "<group>";
@@ -305,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E41F921ADA14DF000FED51 /* SearchBarDelegate.mm in Sources */,
 				F0E41F371AD9B439000FED51 /* ViewController.mm in Sources */,
 				F0E41F341AD9B439000FED51 /* AppDelegate.mm in Sources */,
 				F0E41F311AD9B439000FED51 /* main.m in Sources */,

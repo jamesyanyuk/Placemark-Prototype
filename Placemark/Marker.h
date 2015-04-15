@@ -9,13 +9,17 @@
 #import <Foundation/Foundation.h>
 
 @interface Marker : NSObject {
-    NSString *location;
-    NSString *desc;
+    NSString *nameD;
+    NSString *rating;
+    NSString *latitude;
+    NSString *longitude;
 }
 
-@property (nonatomic, copy) NSString *location;
-@property (nonatomic, copy) NSString *desc;
+@property (nonatomic, copy) NSString *nameD;
+@property (nonatomic, copy) NSString *rating;
+@property (nonatomic, copy) NSString *latitude;
+@property (nonatomic, copy) NSString *longitude;
 
-+ (id)createMarker:(NSString*)location desc:(NSString*)desc;
++ (id)createMarker:(NSString*)nameD rating:(NSString*)rating latitude:(NSString *)latitude longitude:(NSString *)longitude;
 
 @end

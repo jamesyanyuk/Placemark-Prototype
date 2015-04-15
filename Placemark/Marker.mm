@@ -9,14 +9,18 @@
 #import "Marker.h"
 
 @implementation Marker
-@synthesize location;
-@synthesize desc;
 
-+ (id)createMarker:(NSString *)location desc:(NSString *)desc
-{
+@synthesize nameD;
+@synthesize rating;
+@synthesize latitude;
+@synthesize longitude;
+
++ (id)createMarker:(NSString*)nameD rating:(NSString*)rating latitude:(NSString *)latitude longitude:(NSString *)longitude {
     Marker *newMarker = [[self alloc] init];
-    newMarker.location = location;
-    newMarker.desc = desc;
+    newMarker.nameD = nameD;
+    newMarker.rating = rating;
+    newMarker.latitude = latitude;
+    newMarker.longitude = longitude;
     return newMarker;
 }
 
