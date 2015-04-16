@@ -22,7 +22,6 @@ namespace metaio
 
 @interface ViewController : MetaioSDKViewController <UITableViewDataSource, UITableViewDelegate>
 
-<<<<<<< HEAD
 {
     //Added pins
     metaio::IAnnotatedGeometriesGroup* annotatedGeometriesGroup;
@@ -38,20 +37,19 @@ namespace metaio
 
 - (metaio::IGeometry*)loadUpdatedAnnotation:(metaio::IGeometry*)geometry userData:(void*)userData existingAnnotation:(metaio::IGeometry*)existingAnnotation;
 
-@property (strong, nonatomic) NSArray *locationResults;
-=======
+//@property (strong, nonatomic) NSArray *locationResults;
+
 @property (strong, nonatomic) NSMutableArray *locationResults;
->>>>>>> 925819c7a23dd7e3088bd544db3b85ce62001ed5
+
 @property (strong, nonatomic) UITextField *searchTextField;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet GLKView *glView;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
-<<<<<<< HEAD
-=======
+
 -(void)hideSearchResults:(BOOL)hiddenState;
->>>>>>> 925819c7a23dd7e3088bd544db3b85ce62001ed5
+
 
 @end
 

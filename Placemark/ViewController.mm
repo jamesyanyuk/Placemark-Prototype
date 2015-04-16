@@ -95,7 +95,7 @@ public:
     //TODO: change so that all the locations are pins
     NSString* metaioManModel = [[NSBundle mainBundle] pathForResource:@"metaioman"
                                                                ofType:@"md2"
-                                                          inDirectory:@"../Assets"]; //CHANGED
+                                                          inDirectory:@"Assets"]; //CHANGED
 
     if (metaioManModel)
     {
@@ -141,11 +141,7 @@ public:
     
     
     //James lies below v
-    locationResults = [NSArray arrayWithObjects:
-                       [Marker createMarker:@"1,1" desc:@"Random 1"],
-                       [Marker createMarker:@"1,1" desc:@"Random 2"],
-                       [Marker createMarker:@"1,1" desc:@"Random 3"],
-                       [Marker createMarker:@"1,1" desc:@"Random 4"], nil];
+    locationResults = [[NSMutableArray alloc] init];
     
     [self.tableView reloadData];
     
@@ -244,10 +240,10 @@ public:
         NSLog(@"You picked a model at location %f, %f!", modelCoordinate.latitude, modelCoordinate.longitude);
         m_radar->setObjectsDefaultTexture([[[NSBundle mainBundle] pathForResource:@"yellow"
                                                                            ofType:@"png"
-                                                                      inDirectory:@"../Assets"] UTF8String]); //CHANGED
+                                                                      inDirectory:@"Assets"] UTF8String]); //CHANGED
         m_radar->setObjectTexture(model, [[[NSBundle mainBundle] pathForResource:@"red"
                                                                           ofType:@"png"
-                                                                     inDirectory:@"../Assets"] UTF8String]); //CHANGED
+                                                                     inDirectory:@"Assets"] UTF8String]); //CHANGED
     }
 }
 
@@ -365,6 +361,7 @@ public:
 -(void)dismissKeyboard {
     NSLog(@"Keyboard should now dismiss...");
     [searchTextField resignFirstResponder];
+}
 
 -(void)updateSearchResults {
     locationResults = [[NSMutableArray alloc] init];
@@ -471,4 +468,8 @@ public:
 }
 
 
+
 @end
+
+
+
