@@ -38,6 +38,7 @@ public:
 @implementation ViewController
 
 @synthesize locationResults;
+@synthesize displayedResults;
 @synthesize searchTextField;
 
 @synthesize searchBar;
@@ -79,17 +80,17 @@ public:
     // Load some POIs. Each of them has the same shape at its geoposition. We pass a string
     // (const char*) to IAnnotatedGeometriesGroup::addGeometry so that we can use it as POI title
     // in the callback, in order to create an annotation image with the title on it.
-    londonGeo = [self createPOIGeometry:london];
-    annotatedGeometriesGroup->addGeometry(londonGeo, (void*)"London");
-    
-    parisGeo = [self createPOIGeometry:paris];
-    annotatedGeometriesGroup->addGeometry(parisGeo, (void*)"Paris");
-    
-    romeGeo = [self createPOIGeometry:rome];
-    annotatedGeometriesGroup->addGeometry(romeGeo, (void*)"Rome");
-    
-    tokyoGeo = [self createPOIGeometry:tokyo];
-    annotatedGeometriesGroup->addGeometry(tokyoGeo, (void*)"Tokyo");
+//    londonGeo = [self createPOIGeometry:london];
+//    annotatedGeometriesGroup->addGeometry(londonGeo, (void*)"London");
+//    
+//    parisGeo = [self createPOIGeometry:paris];
+//    annotatedGeometriesGroup->addGeometry(parisGeo, (void*)"Paris");
+//    
+//    romeGeo = [self createPOIGeometry:rome];
+//    annotatedGeometriesGroup->addGeometry(romeGeo, (void*)"Rome");
+//    
+//    tokyoGeo = [self createPOIGeometry:tokyo];
+//    annotatedGeometriesGroup->addGeometry(tokyoGeo, (void*)"Tokyo");
 
     // load a 3D model and put it in Munich
     //TODO: change so that all the locations are pins
@@ -114,6 +115,7 @@ public:
     
     // Create radar object
     m_radar = m_pMetaioSDK->createRadar();
+    m_radar->setTranslation(metaio::Vector3d(0, -50, 0));
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *assetFolder = @"../Assets"; //CHANGED
     NSString *radarPath = [mainBundle pathForResource:@"radar"
@@ -131,17 +133,18 @@ public:
     m_radar->setRelativeToScreen(metaio::IGeometry::ANCHOR_TL);
     
     // Add geometries to the radar
-    m_radar->add(londonGeo);
-    m_radar->add(parisGeo);
-    m_radar->add(romeGeo);
-    m_radar->add(tokyoGeo);
-    m_radar->add(metaioMan);
+//    m_radar->add(londonGeo);
+//    m_radar->add(parisGeo);
+//    m_radar->add(romeGeo);
+//    m_radar->add(tokyoGeo);
+//    m_radar->add(metaioMan);
     
     
     
     
     //James lies below v
     locationResults = [[NSMutableArray alloc] init];
+    displayedResults = [[NSMutableArray alloc] init];
     
     [self.tableView reloadData];
     
@@ -205,11 +208,13 @@ public:
             heading = -atan2(v.y, v.x) - (float)M_PI_2;
         }
         
-        metaio::IGeometry* geos[] = {londonGeo, parisGeo, romeGeo, tokyoGeo};
+        //metaio::IGeometry* geos[] = {londonGeo, parisGeo, romeGeo, tokyoGeo};
         const metaio::Rotation rot((float)M_PI_2, 0.0f, -heading);
-        for (int i = 0; i < 4; ++i)
-        {
-            geos[i]->setRotation(rot);
+        if(locationResults.count > 0) {
+            for (Marker *result in locationResults) {
+                if(result.geoObj != nil)
+                    result.geoObj->setRotation(rot);
+            }
         }
     }
     
@@ -366,38 +371,36 @@ public:
 -(void)updateSearchResults {
     locationResults = [[NSMutableArray alloc] init];
     
-    NSLog(@"------");
     NSString *p1 = @"http://api.tripadvisor.com/api/partner/2.0/search/";
     NSString *p2 = @"?key=HackUMass-93b8e93cda61&category=restaurants&limit=6";
     NSString *searchQuery = [NSString stringWithFormat:@"%@/%@/%@", p1, searchTextField.text, p2];
-    NSLog(searchQuery);
     
     NSURL *url = [NSURL URLWithString:searchQuery];
-    NSData *data = [NSData dataWithContentsOfURL:url];
     
-    if(data != nil) {
-        NSDictionary *restaurants = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-    
-        NSLog(@"LEN: %d", [[restaurants objectForKey:@"restaurants"] count]);
-    
-        for(int i = 0; i < [[restaurants objectForKey:@"restaurants"] count]; i++) {
-            NSDictionary *resultsDictionary = [[restaurants objectForKey:@"restaurants"] objectAtIndex:i];
-        
-            NSString *name = [resultsDictionary objectForKey:@"name"];
-            NSString *rating = [resultsDictionary objectForKey:@"rating"];
-            NSString *latitude = [resultsDictionary objectForKey:@"latitude"];
-            NSString *longitude = [resultsDictionary objectForKey:@"longitude"];
-        
-            NSLog(name);
-        
-            Marker *newRes = [Marker createMarker:name rating:rating latitude:latitude longitude:longitude];
-        
-            // do the insertion
-            [locationResults addObject:newRes];
+    NSURLRequest* request = [[NSURLRequest alloc] initWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse* response, NSData* data, NSError* error) {
+        // Once async call completes:
+        if(data != nil) {
+            NSDictionary *restaurants = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            
+            for(int i = 0; i < [[restaurants objectForKey:@"restaurants"] count]; i++) {
+                NSDictionary *resultsDictionary = [[restaurants objectForKey:@"restaurants"] objectAtIndex:i];
+                
+                NSString *name = [resultsDictionary objectForKey:@"name"];
+                NSString *rating = [resultsDictionary objectForKey:@"rating"];
+                double latitude = [[resultsDictionary objectForKey:@"latitude"] doubleValue];
+                double longitude = [[resultsDictionary objectForKey:@"longitude"] doubleValue];
+                
+                metaio::LLACoordinate pointOfInterestLLA = metaio::LLACoordinate(latitude, longitude, 0, 0);
+                Marker *newRes = [Marker createMarker:name rating:rating geo:pointOfInterestLLA];
+                
+                // do the insertion
+                [locationResults addObject:newRes];
+            }
+            
+            [self.tableView reloadData];
         }
-        
-        [self.tableView reloadData];
-    }
+    }];
 }
 
 -(void)hideSearchResults:(BOOL)hiddenState {
@@ -438,7 +441,15 @@ public:
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
     // Display beacon!
     NSString *name = [[locationResults objectAtIndex:indexPath.row] nameD];
-    NSLog(@"Displaying beacon for: %@", name);
+    NSString *rating = [[locationResults objectAtIndex:indexPath.row] rating];
+    
+    metaio::IGeometry *pointOfInterest = [self createPOIGeometry:[[locationResults objectAtIndex:indexPath.row] geo]];
+    
+    //[displayedResults addObject:pointOfInterest];
+    
+    [[locationResults objectAtIndex:indexPath.row] addGeoObject:pointOfInterest];
+    annotatedGeometriesGroup->addGeometry(pointOfInterest, (void*)"TEST");
+    m_radar->add(pointOfInterest);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -447,7 +458,6 @@ public:
 
 - (void)handleResultTouch:(id)sender {
     UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
-    NSLog(@"H");
     NSLog(@"Tag = %@", [[locationResults objectAtIndex:gesture.view.tag] nameD]);
 }
 

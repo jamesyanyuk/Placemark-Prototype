@@ -40,6 +40,7 @@ namespace metaio
 //@property (strong, nonatomic) NSArray *locationResults;
 
 @property (strong, nonatomic) NSMutableArray *locationResults;
+@property (strong, nonatomic) NSMutableArray *displayedResults;
 
 @property (strong, nonatomic) UITextField *searchTextField;
 

@@ -14,14 +14,19 @@
 @synthesize rating;
 @synthesize latitude;
 @synthesize longitude;
+@synthesize geo;
+@synthesize geoObj;
 
-+ (id)createMarker:(NSString*)nameD rating:(NSString*)rating latitude:(NSString *)latitude longitude:(NSString *)longitude {
++ (id)createMarker:(NSString*)nameD rating:(NSString*)rating geo:(metaio::LLACoordinate)geo {
     Marker *newMarker = [[self alloc] init];
     newMarker.nameD = nameD;
     newMarker.rating = rating;
-    newMarker.latitude = latitude;
-    newMarker.longitude = longitude;
+    newMarker.geo = geo;
     return newMarker;
+}
+
+- (void)addGeoObject:(metaio::IGeometry*)geoObject {
+    self.geoObj = geoObject;
 }
 
 @end
