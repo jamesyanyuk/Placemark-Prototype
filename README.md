@@ -1,2 +1,2 @@
 # Placemark
-(You'll have to wait 'til HackUMass)
+Augmented reality navigation app for iOS. Created for HackUMASS 2015.
